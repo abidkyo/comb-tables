@@ -2,7 +2,7 @@
 """
 Script to combine multiple tables with different column names.
 
-- Read the data as string.
+- Read the data.
 - Rename the columns to match the other column names.
 - Export the dataframe.
 
@@ -36,10 +36,10 @@ files = args.files
 outFileName = args.output
 
 
-# Read excel files with dtype set to str (easier to join).
+# Read excel files.
 df_list = []
 for file in files:
-    df_list.append(pd.read_excel(file, dtype=str))
+    df_list.append(pd.read_excel(file))
 
 if verbose:
     print("Original Data")

@@ -3,7 +3,7 @@
 ## Description
 Script to combine multiple tables with different column names.
 
-- Read the data as string.
+- Read the data.
 - Rename the columns to match the other column names.
 - Export the dataframe.
 

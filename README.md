@@ -9,9 +9,11 @@ Script to combine multiple tables with different column names.
 
 
 ## Requirement:
+- The data should be in the first sheet of the excel file.
 - User need to modify the `dict` variable to rename the columns.
   The variable can be empty if rename is unnecessary.
-- The data should be in the first sheet of the excel file.
+- User need to modify the index of dataframe in `df_list` to be renamed.
+  The index starts with `0` and it is according to the position in the arguments.
 
 ### Example `dict` variable
 ```python
@@ -19,6 +21,12 @@ dict = {
     "first": "First Name",
     "last": "Last Name",
 }
+```
+
+### Example modify index of dataframe in `df_list`
+Replace `1` with the index that you want.
+```python
+df_list[1].rename(columns=dict, inplace=True)
 ```
 
 

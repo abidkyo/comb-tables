@@ -9,11 +9,11 @@ Script to combine multiple tables with different column names.
 
 
 ## Requirement:
-- User need to modify the 'dict' variable to rename the columns.
+- User need to modify the `dict` variable to rename the columns.
   The variable can be empty if rename is unnecessary.
 - The data should be in the first sheet of the excel file.
 
-### Example 'dict' variable
+### Example `dict` variable
 ```python
 dict = {
     "first": "First Name",

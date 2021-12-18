@@ -14,7 +14,7 @@ Requirement:
   The index starts with '0' and it is according to the position in the arguments.
 
 Usage:
-    python3 comb_tables.py -v --files data1.xlsx data2.xlsx -o output.xlsx
+    python3 comb-tables.py -v --files data1.xlsx data2.xlsx -o output.xlsx
 """
 
 
